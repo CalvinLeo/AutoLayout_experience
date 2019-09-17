@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CLHeaderView" customModule="AutoLayout_demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="273"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="car-pY-7Ux">
+                    <rect key="frame" x="16" y="16" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Lv1-qM-M7V"/>
+                        <constraint firstAttribute="height" constant="60" id="bga-IG-ySs"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是名字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-Zj-aLA">
+                    <rect key="frame" x="92" y="16" width="69.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONd-cY-c1o">
+                    <rect key="frame" x="16" y="95" width="343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ONT-F1-4gb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xj-t5-Wf1">
+                    <rect key="frame" x="16" y="136" width="343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="xzE-jz-qB0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESz-V2-oMR">
+                    <rect key="frame" x="16" y="173" width="343" height="80"/>
+                    <color key="backgroundColor" red="0.37254901959999998" green="0.76862745099999996" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="33a-9u-3mZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8xj-t5-Wf1" firstAttribute="top" secondItem="ONd-cY-c1o" secondAttribute="bottom" constant="20" id="DMi-Dd-t7F"/>
+                <constraint firstItem="car-pY-7Ux" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="FbX-oM-4dh"/>
+                <constraint firstItem="ufF-Zj-aLA" firstAttribute="leading" secondItem="car-pY-7Ux" secondAttribute="trailing" constant="16" id="GDw-rP-0BQ"/>
+                <constraint firstItem="ONd-cY-c1o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Lg6-ie-rmT"/>
+                <constraint firstItem="8xj-t5-Wf1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="UQ2-NA-Rop"/>
+                <constraint firstItem="ESz-V2-oMR" firstAttribute="top" secondItem="8xj-t5-Wf1" secondAttribute="bottom" constant="16" id="WXo-qr-Krq"/>
+                <constraint firstItem="ESz-V2-oMR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="YTd-QL-L4w"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ONd-cY-c1o" secondAttribute="trailing" constant="16" id="gAW-03-pal"/>
+                <constraint firstItem="car-pY-7Ux" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="gab-Sw-NNN"/>
+                <constraint firstItem="ONd-cY-c1o" firstAttribute="top" secondItem="car-pY-7Ux" secondAttribute="bottom" constant="19" id="h7V-2V-0es"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ESz-V2-oMR" secondAttribute="trailing" constant="16" id="nGZ-Iv-F6s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8xj-t5-Wf1" secondAttribute="trailing" constant="16" id="rOw-7H-aEI"/>
+                <constraint firstAttribute="bottom" secondItem="ESz-V2-oMR" secondAttribute="bottom" constant="20" id="sw3-yh-dZF"/>
+                <constraint firstItem="ufF-Zj-aLA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="tsa-3w-ukW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentLbl" destination="8xj-t5-Wf1" id="1GX-VO-ENM"/>
+                <outlet property="themeLbl" destination="ONd-cY-c1o" id="eKg-AM-mvO"/>
+            </connections>
+            <point key="canvasLocation" x="123.18840579710145" y="197.87946428571428"/>
+        </view>
+    </objects>
+</document>
