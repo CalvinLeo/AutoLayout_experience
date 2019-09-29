@@ -32,8 +32,10 @@ class CLHeaderView: UIView {
         self.themeLbl.preferredMaxLayoutWidth = SCREEN_WIDTH - 16 - 16;
         self.contentLbl.preferredMaxLayoutWidth = SCREEN_WIDTH - 16 - 16;
         let height = self.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height;
+        let width = self.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).width;
         var frame = self.frame;
         frame.size.height = height;
+        frame.size.width = width;
         self.frame = frame;
     }
 }
