@@ -2,6 +2,8 @@
 
 >背景：在个人、团队规模较小的某些项目中，有时候为了快速的开发出一个页面，我们会考虑使用 xib 文件来布局视图。这种方式确实会让视图很快的生成，同时在使用的过程中，会有些问题。这篇是我个人在使用的过程中遇到的困惑的解决心得。
 
+[StackView的使用](STACKVIEW.md)
+
 #### 示例图
 
 <div align=center><img width= "375" height= "586" src="https://github.com/CalvinLeo/AutoLayout_experience/blob/master/Image/image1.png"/></div>
